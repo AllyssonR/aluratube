@@ -1,8 +1,7 @@
-import config from "../../config.json";
-import { Header } from "../components/Header";
-import { Menu } from "../components/Menu";
-import { TimeLine } from "../components/TimeLine";
-
+import config from '../../config.json'
+import { Header } from '../components/Header'
+import { Menu } from '../components/Menu'
+import { TimeLine } from '../components/TimeLine'
 export default function Home() {
   return (
     <>
@@ -12,7 +11,7 @@ export default function Home() {
         userName={config.name}
       />
       <Menu />
-      <TimeLine playlists={config.playlists} key={config.name} />
+      <TimeLine playlists={config.playlists} />
     </>
-  );
+  )
 }
