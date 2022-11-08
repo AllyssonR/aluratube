@@ -1,0 +1,14 @@
+{
+  "name": "Mario Souto(Dev Soutinho)",
+  "job": "Lead Software Enginear",
+  "github": "omariosouto",
+  "playlists": {
+    "jogos": [
+      {
+        "title": "Algum titulo",
+        "url": "url do jogo",
+        "thumb": "alguma thumb"
+      }
+    ]
+  }
+}
