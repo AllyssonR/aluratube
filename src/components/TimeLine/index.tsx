@@ -17,7 +17,7 @@ export function TimeLine({ playlists }: TimeLineProps) {
   return (
     <div>
       {playlistNames.map((playlistName) => {
-        const videos = playlists[playlistName] as Array<TimeLineProps>
+        const videos = playlists
         return (
           <section>
             <h2>{playlistName}</h2>
