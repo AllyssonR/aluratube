@@ -1,7 +1,12 @@
+import { TimeLine, TimeLineProps } from '../components/TimeLine'
 import config from '../../config.json'
 import { Header } from '../components/Header'
 import { Menu } from '../components/Menu'
-import { TimeLine } from '../components/TimeLine'
+interface HomeProps extends TimeLineProps {
+  github: string
+  job: string
+  name: string
+}
 export default function Home() {
   return (
     <>

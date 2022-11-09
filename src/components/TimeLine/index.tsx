@@ -1,4 +1,5 @@
-interface TimeLineProps {
+import{StyledTimeline}from'./styles'
+export interface TimeLineProps {
   playlists: {
     jogos: {
       title: string //especificando que no tipo tem um objeto com dois arrays
@@ -15,9 +16,9 @@ interface TimeLineProps {
 export function TimeLine({ playlists }: TimeLineProps) {
   const playlistNames = Object.keys(playlists)
   return (
-    <div>
+    <StyledTimeline>
       {playlistNames.map((playlistName) => {
-        const videos = playlists
+        const videos = playlists[playlistName]
         return (
           <section>
             <h2>{playlistName}</h2>
@@ -34,6 +35,6 @@ export function TimeLine({ playlists }: TimeLineProps) {
           </section>
         )
       })}
-    </div>
+    </StyledTimeline>
   )
 }
