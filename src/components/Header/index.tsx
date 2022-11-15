@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 type props = {
-  userName: string;
-  job: string;
-  githubProfileAvatar: string;
-};
-import { HeaderStyled } from "./styles";
+  userName: string
+  job: string
+  githubProfileAvatar: string
+}
+import { HeaderStyled } from './styles'
 export function Header({ userName, job, githubProfileAvatar }: props) {
   return (
     <HeaderStyled>
@@ -20,5 +20,5 @@ export function Header({ userName, job, githubProfileAvatar }: props) {
         </div>
       </section>
     </HeaderStyled>
-  );
+  )
 }
